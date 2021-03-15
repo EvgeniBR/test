@@ -1,34 +1,38 @@
+import Card from "./components/Card/Card.component";
+import Button from "./components/Button/Button.componnet";
 
 function App() {
-  const students = [
-    {
-      name: "doltan",
-      age: 25,
-    },
-    {
-      name: "slam",
-      age: 25,
-    },
-    {
-      name: "magnom",
-      age: 25,
-    },
-    {
-      name: "spark",
-      age: 25,
-    },
-    {
-      name: "bob",
-      age: 25,
-    },
-  ];
-
-  return(
-<div>
-  Hello world
   
-  </div>
-  ) 
+
+  return (
+    <div>
+      <Button weight={700} >important</Button>
+      <Button weight={300} >not important</Button>
+
+
+    <Card 
+      source={'https://picsum.photos/200/300'}
+      title={'lorem'}
+      description={'lore picsum'}
+      share={'https://picsum.photos/'}
+      explore={'https://unsplash.com/'}   
+    />
+    <Card 
+      source={'https://picsum.photos/200/300'}
+      title={'lorem'}
+      description={'lore picsum'}
+      share={'https://picsum.photos/'}
+      explore={'https://unsplash.com/'}   
+    />
+    <Card 
+      source={'https://picsum.photos/200/300'}
+      title={'lorem'}
+      description={'lore picsum'}
+      share={'https://picsum.photos/'}
+      explore={'https://unsplash.com/'}   
+    />
+    </div>
+  );
 }
 
 export default App;
